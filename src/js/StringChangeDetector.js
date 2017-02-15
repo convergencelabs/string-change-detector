@@ -30,7 +30,7 @@ export default class StringChangeDetector {
    *   The value to insert into the string.
    */
   insertText(index, value) {
-    const oldVal = this._input.value;
+    const oldVal = this._value;
     const newVal =
       oldVal.substring(0, index) +
       value +
@@ -48,7 +48,7 @@ export default class StringChangeDetector {
    *   The number of characters to remove.
    */
   removeText(index, length) {
-    const oldVal = this._input.value;
+    const oldVal = this._value;
     const newVal = oldVal.substring(0, index) +
       oldVal.substring(index + length, oldVal.length);
     this.setValue(newVal);

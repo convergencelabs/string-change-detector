@@ -127,4 +127,34 @@ describe('StringChangeDetector', function () {
       });
     }).should.throw();
   });
+
+  it('setValue sets the value', function () {
+    const detector = new StringChangeDetector({
+      value: "",
+      onInsert: function() {},
+      onRemove: function() {}
+    });
+    detector.setValue("test");
+    detector.getValue().should.equal("test");
+  });
+
+  it('insertText should properly insert text', function () {
+    const detector = new StringChangeDetector({
+      value: "1234",
+      onInsert: function() {},
+      onRemove: function() {}
+    });
+    detector.insertText(2, "test");
+    detector.getValue().should.equal("12test34");
+  });
+
+  it('removeText should properly remove text', function () {
+    const detector = new StringChangeDetector({
+      value: "123456",
+      onInsert: function() {},
+      onRemove: function() {}
+    });
+    detector.removeText(2, 3);
+    detector.getValue().should.equal("126");
+  });
 });
