@@ -1,9 +1,9 @@
 # String Change Detector
 [![Build Status](https://travis-ci.org/convergencelabs/string-change-detector.svg?branch=master)](https://travis-ci.org/convergencelabs/string-change-detector)
 
-This module provides a set of utilities to bind plain HTML Input / Form Elements to a Convergence model. The module provides simple two way data binding between the HTML input element and a particular field in the Convergence data model. The module currently supports the following input elements:
+This module provides a utility that helps generate granular changes to a string. The StringChangeDetector tracks the current / last known value of the string.  After a single edit, the new value can be passed to the StringChangeDetector and the detector will determine the changed made to the string can execute callbacks that communicated them in terms of discrete modifications.
 
-
+Unlike a more generalized diff, the utility assumes that the new and old values differ by only one single edit. This allows the logic to be more performant than a regular diff algorithm.
 
 ## Installation
 `npm install --save @string-change-detector`
