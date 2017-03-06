@@ -1,6 +1,5 @@
-declare namespace StringChangeDetector {}
 
-declare class StringChangeDetector {
+export default class StringChangeDetector {
 
   constructor(options: {
     value: string;
@@ -20,4 +19,3 @@ declare class StringChangeDetector {
 }
 
 export as namespace StringChangeDetector;
-export = StringChangeDetector;
