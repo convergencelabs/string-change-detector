@@ -1,3 +1,5 @@
+declare namespace StringChangeDetector {}
+
 declare class StringChangeDetector {
 
   constructor(options: {
@@ -6,7 +8,7 @@ declare class StringChangeDetector {
     onRemove: (index: number, length: number) => void;
   });
 
-  public insertText(index, value): void
+  public insertText(index, value): void;
 
   public removeText(index, length): void;
 

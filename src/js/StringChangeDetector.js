@@ -1,4 +1,4 @@
-export default class StringChangeDetector {
+export class StringChangeDetector {
   constructor(options) {
     if (!options) {
       throw new Error("options must be defined");

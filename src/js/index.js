@@ -1,1 +1,1 @@
-module.exports = require('./StringChangeDetector');
+module.exports = require('./StringChangeDetector').StringChangeDetector;
