@@ -1,4 +1,4 @@
-export class StringChangeDetector {
+declare class StringChangeDetector {
 
   constructor(options: {
     value: string;
