@@ -1,6 +1,10 @@
-export as namespace StringChangeDetector;
+export class StringChangeDetector {
 
-export default class StringChangeDetector {
+  constructor(options: {
+    value: string;
+    onInsert: (index: number, value: string) => void;
+    onRemove: (index: number, length: number) => void;
+  });
 
   public insertText(index, value): void
 
@@ -12,3 +16,6 @@ export default class StringChangeDetector {
 
   public processNewValue(newValue): void;
 }
+
+export as namespace StringChangeDetector;
+export = StringChangeDetector;

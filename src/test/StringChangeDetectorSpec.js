@@ -1,6 +1,7 @@
 'use strict';
 
 const StringChangeDetector = require('../../build/lib/index');
+console.log(StringChangeDetector);
 const should = require('should');
 
 describe('StringChangeDetector', function () {

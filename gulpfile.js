@@ -63,10 +63,6 @@ gulp.task('webpack-umd', function () {
       ]
     },
     resolve: {root: path.resolve("./src/js"), extensions: ["", ".js"]},
-    plugins: [],
-    externals: {
-      "@convergence/convergence": "Convergence"
-    }
   };
 
   const packageJson = JSON.parse(fs.readFileSync("./package.json"));
