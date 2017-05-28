@@ -1,5 +1,4 @@
-
-export default class StringChangeDetector {
+declare class StringChangeDetector {
 
   constructor(options: {
     value: string;
@@ -18,4 +17,4 @@ export default class StringChangeDetector {
   public processNewValue(newValue): void;
 }
 
-export as namespace StringChangeDetector;
+export = StringChangeDetector;
