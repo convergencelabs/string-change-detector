@@ -7,7 +7,7 @@
     "change",
     "detector"
   ],
-  "version": "0.1.7",
+  "version": "0.1.8",
   "homepage": "http://convergencelabs.com",
   "author": {
     "name": "Convergence Labs, Inc.",
@@ -33,7 +33,6 @@
     "access": "public"
   },
   "main": "lib/index.js",
-  "browser": "browser/string-change-detector.js",
   "types": "types/index.d.ts",
   "dependencies": {
   },
