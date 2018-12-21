@@ -6,15 +6,15 @@ declare class StringChangeDetector {
     onRemove: (index: number, length: number) => void;
   });
 
-  public insertText(index, value): void;
+  public insertText(index: number, value: string): void;
 
-  public removeText(index, length): void;
+  public removeText(index: number, length: number): void;
 
-  public setValue(value): void;
+  public setValue(value: string): void;
 
   public getValue(): string;
 
-  public processNewValue(newValue): void;
+  public processNewValue(newValue: string): void;
 }
 
 export = StringChangeDetector;
